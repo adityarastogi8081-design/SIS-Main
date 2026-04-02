@@ -195,31 +195,51 @@ export default function DigitalMarketing() {
                 </motion.div>
 
                 {/* Stage 4 */}
-                <motion.div
-                  initial={{ opacity: 0, x: 30, width: "55%" }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  className="w-[55%]"
-                >
-                  <div className="relative group overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#04AAA5]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <div className="relative p-6 rounded-xl border border-[#04AAA5]/30 bg-gradient-to-r from-[#04AAA5]/10 to-transparent backdrop-blur-md">
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3 mb-2">
-                            <div className="w-8 h-8 rounded-lg bg-[#04AAA5] flex items-center justify-center text-black font-bold text-sm">4</div>
-                            <h4 className="text-lg font-bold text-white">Training & Coaching</h4>
-                          </div>
-                          <p className="text-gray-300 text-sm leading-relaxed ml-11">Maintaining the relevance of team training and learning resources for operational excellence</p>
-                        </div>
-                        <div className="text-right ml-4">
-                          <div className="text-2xl font-black text-[#04AAA5]">52%</div>
-                          <div className="text-xs text-gray-400">Mastery</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
+               <motion.div
+  initial={{ opacity: 0, x: 30 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6, delay: 0.4 }}
+  className="w-[95%] sm:w-[80%] lg:w-[55%]"
+>
+  <div className="relative group overflow-hidden">
+    <div className="absolute inset-0 bg-gradient-to-r from-[#04AAA5]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+    
+    <div className="relative p-4 sm:p-6 rounded-xl border border-[#04AAA5]/30 bg-gradient-to-r from-[#04AAA5]/10 to-transparent backdrop-blur-md">
+      
+      <div className="flex items-start justify-between">
+        
+        <div className="flex-1">
+          
+          <div className="flex items-center gap-2 sm:gap-3 mb-2">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#04AAA5] flex items-center justify-center text-black font-bold text-xs sm:text-sm">
+              4
+            </div>
+
+            <h4 className="text-base sm:text-lg font-bold text-white">
+              Training & Coaching
+            </h4>
+          </div>
+
+          <p className="text-gray-300 text-xs sm:text-sm leading-relaxed ml-9 sm:ml-11">
+            Maintaining the relevance of team training and learning resources for operational excellence
+          </p>
+        
+        </div>
+
+        <div className="text-right ml-2 sm:ml-4">
+          <div className="text-xl sm:text-2xl font-black text-[#04AAA5]">
+            52%
+          </div>
+          <div className="text-[10px] sm:text-xs text-gray-400">
+            Mastery
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</motion.div>
               </div>
             </motion.div>
 

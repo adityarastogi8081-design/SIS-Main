@@ -13,10 +13,15 @@ import BlogHub from './Pages/BlogHub'
 import SplashScreen from './components/SplashScreen'
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true)
+  const [showSplash, setShowSplash] = useState(() => {
+    // Check if splash screen has been shown in this session
+    return !sessionStorage.getItem('splashScreenShown')
+  })
 
   const handleSplashComplete = () => {
     setShowSplash(false)
+    // Mark splash screen as shown for this session
+    sessionStorage.setItem('splashScreenShown', 'true')
   }
 
   return (
