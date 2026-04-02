@@ -44,7 +44,7 @@ export default function SocialMediaMarketing() {
   };
 
   return (
-    <div ref={containerRef} className="min-h-screen relative bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-[#FBB040]/30">
+    <div ref={containerRef} className="min-h-screen relative bg-[#050505] text-white font-sans selection:bg-[#FBB040]/30">
       <SEO
         title="Social Media Marketing Strategy | Say It Social"
         description="Discover the What, Why, and Impact of Social Media Marketing. We build engaged global communities that turn followers into brand advocates."

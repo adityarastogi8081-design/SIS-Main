@@ -98,7 +98,7 @@ export default function HeroSection({ scrollY = 0 }) {
               Social Media Marketing
             </motion.span>
           </div>
-          <div className="overflow-hidden ">
+          <div className="">
             <motion.span variants={wordReveal} className="block">
               {/* Primary keyword highlighted */}
               <motion.span
