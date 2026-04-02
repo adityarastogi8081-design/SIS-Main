@@ -172,7 +172,7 @@ export default function DigitalMarketing() {
                   initial={{ opacity: 0, x: 30, width: "70%" }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="w-[70%]"
+                  className="w-[72%]"
                 >
                   <div className="relative group overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-[#04AAA5]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
