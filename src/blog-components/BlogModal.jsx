@@ -136,18 +136,18 @@ export default function BlogModal({ post, isOpen, onClose }) {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={onClose}
-                className="absolute top-6 right-6 z-10 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center transition-all duration-300 backdrop-blur-md"
+                className="absolute top-3 sm:top-6 right-3 sm:right-6 z-10 w-8 sm:w-10 h-8 sm:h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center transition-all duration-300 backdrop-blur-md"
               >
-                <X className="w-5 h-5 text-white" />
+                <X className="w-4 sm:w-5 h-4 sm:h-5 text-white" />
               </motion.button>
 
               {/* Category Badge */}
-              <div className="absolute top-6 left-6 z-10">
+              <div className="absolute top-3 sm:top-6 left-3 sm:left-6 z-10">
                 <motion.span
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="inline-block px-4 py-2 rounded-full text-[11px] uppercase tracking-widest font-bold text-white bg-gradient-to-r from-[#FBB040] to-[#FBB040]/60 shadow-lg"
+                  className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[10px] sm:text-[11px] uppercase tracking-widest font-bold text-white bg-gradient-to-r from-[#FBB040] to-[#FBB040]/60 shadow-lg"
                 >
                   {post.category}
                 </motion.span>
@@ -247,10 +247,10 @@ export default function BlogModal({ post, isOpen, onClose }) {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={handleShare}
-                  className="px-8 sm:px-10 py-3 sm:py-4 rounded-lg sm:rounded-xl border-2 border-[#FBB040]/50 hover:border-[#FBB040] text-[#FBB040] font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-[#FBB040]/10 transition-all duration-300 flex items-center justify-center gap-2"
+                  className="px-6 sm:px-10 py-2.5 sm:py-4 rounded-lg sm:rounded-xl border-2 border-[#FBB040]/50 hover:border-[#FBB040] text-[#FBB040] font-bold uppercase tracking-widest text-[10px] sm:text-sm hover:bg-[#FBB040]/10 transition-all duration-300 flex items-center justify-center gap-2 w-full sm:w-auto"
                 >
-                  <Share2 className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span>Share Article</span>
+                  <Share2 className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                  <span>Share</span>
                 </motion.button>
               </motion.div>
 

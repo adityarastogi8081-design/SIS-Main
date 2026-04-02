@@ -60,7 +60,7 @@ export default function BrandIdentity() {
   };
 
   return (
-    <div ref={containerRef} className="min-h-screen relative bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-[#FBB040]/30">
+    <div ref={containerRef} className="min-h-screen relative bg-[#050505] text-white font-sans selection:bg-[#FBB040]/30">
       <SEO
         title="Brand Identity & Design Services | Say It Social"
         description="Discover the What, Why, and Impact of a premium Brand Identity. We build visual systems that command authority and trust."
