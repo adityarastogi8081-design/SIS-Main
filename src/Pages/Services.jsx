@@ -165,7 +165,7 @@ export default function Services() {
   };
 
   return (
-    <div className="min-h-screen relative bg-[#050505] text-white font-sans overflow-x-hidden">
+    <div className="min-h-screen relative bg-[#050505] text-white font-sans">
       <SEO
         title="Our Services | Say It Social Digital Agency"
         description="Scale your brand with expert SMM, SEO, Web Dev & Branding. 2M+ reach & 5+ years expertise."
